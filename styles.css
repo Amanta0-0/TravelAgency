@@ -38,15 +38,9 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 50px;
-    background-color: #01306d;
+    background-color: #023e8a;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-header h1 img {
-    padding-top: 0px;
-    width: 100px;
-    height: auto;
-    margin-right: 100px;
 }
 
 /* Section */
@@ -71,6 +65,31 @@ section {
     border-radius: 8px;
 }
 
+/* Grid Layout for Packages Page */
+
+.packages-container {
+    display: flex;
+    justify-content: center;  /* Centers the packages */
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Package Box Styling */
+.package {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Fixed width for uniformity */
+}
+
+.package img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Flexbox for Gallery Page */
 .flex-gallery {
     display: flex;
@@ -91,4 +110,59 @@ footer {
     background-color: #0077b6;
     color: white;
     margin-top: 20px;
+}
+/* "Book Now" Button */
+.book-btn {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.book-btn:hover {
+    background-color: #005a8d;
+}
+
+/* Side Button Container */
+.side-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+/* "Other Destinations" Button */
+.other-destinations-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.other-destinations-btn:hover {
+    background-color: #066ca7;
+}
+
+/* Centering the images and making grid the size of images */
+.image-grid {
+    display: grid;
+    justify-items: center;  /* Centers the content horizontally */
+    margin-top: 20px;
+}
+
+.contact-image {
+    max-width: 100%;  /* Ensures image fits within container */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow to the image */
+    margin-bottom: 20px; /* Adds space below the images */
 }
